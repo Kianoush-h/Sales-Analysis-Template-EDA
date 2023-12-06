@@ -170,12 +170,13 @@ plt.show()
 plt.title("Transaction Over Hours")
 
 
+# =============================================================================
+# PART 5: Discovering transaction_qty column
+# =============================================================================
 
-
-
-
-
-
+# see number of sales quantity  
+count_plot(x_axis = "transaction_qty")
+plt.title("Sales Over Transaction Quantity")
 
 
 

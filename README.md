@@ -6,9 +6,10 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 ## Analysis & Visualizations
 * Discovering transaction_date column
 * Extract some information such as year , month and day
-* see number of transaction in each month
-* see number of transaction in each day of week
-* see number of transaction in each hour
+* Transaction in each month
+* Transaction in each day of week
+* Transaction in each hour
+* Sales over different Transaction Quantities
 
 
 ## Visualizition Analysis
@@ -21,5 +22,8 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 *A bar plot focusing on the Transactions over days of week.*
 
 ![Image 3](./plots/Transaction_Over_Hours.png)
-*A bar plot focusing on the Transactions over hours.*
+*A bar plot focusing on the Transactions over hours. Most sales were from 7 AM to 11 AM*
+
+![Image 4](./plots/Sales_Over_Transaction_Quantity.png)
+*A bar plot focusing on the sales over transaction quantities*
 
