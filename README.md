@@ -10,9 +10,10 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 * Transaction in each day of week
 * Transaction in each hour
 * Sales over different Transaction Quantities
+* Sales in Each Store
+* Most Common Category
 
-
-## Visualizition Analysis
+# Visualizition Analysis
 
 
 ![Image 1](./plots/sales_over_months.png)
@@ -25,5 +26,11 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 *A bar plot focusing on the Transactions over hours. Most sales were from 7 AM to 11 AM*
 
 ![Image 4](./plots/Sales_Over_Transaction_Quantity.png)
-*A bar plot focusing on the sales over transaction quantities*
+*A bar plot focusing on the sales over transaction quantities. Most sales were singles followed by 2 lots*
 
+![Image 5](./plots/sales_in_each_store.png)
+*A pie plot focusing on the sales for each store. The sales rates of the three stores were similar, with the most significant difference observed at the Hell's Kitchen store*
+
+
+![Image 6](./plots/most_common_category.png)
+*A bar plot focusing on the most common products. Coffee stands as the best-selling product. Tea also exhibits a high sales rate.*

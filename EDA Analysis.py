@@ -181,16 +181,28 @@ plt.title("Sales Over Transaction Quantity")
 
 
 
+# =============================================================================
+# PART 6: Discovering store_location column
+# =============================================================================
+
+# see number of sales in each store
+
+pie_plot(column_name = "store_location", explodeIndex = 0)
+plt.title("Sales in Each Store")
 
 
+# =============================================================================
+# PART 7: Discovering product_category column
+# =============================================================================
 
+# see most common category
 
+# set figure size
+plt.figure(figsize = (15,6))
 
-
-
-
-
-
+# call function i create it in cell 12
+count_plot(x_axis = "product_category")  
+plt.title("Most Common Category")
 
 
 
