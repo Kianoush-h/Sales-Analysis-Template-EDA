@@ -51,7 +51,16 @@ data.describe()
 data.duplicated().any()
 
 
+# see unique values in each column
 
+# 1- create new data frame with number of unique value in each column
+columnValue = data.nunique().reset_index()
+
+# 2- rename column name 
+columnValue.rename(columns = {"index" : "Column _name", 0 : "Uniue values"}, inplace = True)
+
+# 3- see columns and number of unique values of each
+print(columnValue)
 
 
 
