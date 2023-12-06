@@ -157,10 +157,17 @@ count_plot(x_axis = "day")
 plt.title("Transaction Over Days of Week")
 
 
+# =============================================================================
+# PART 4: transactions over hours
+# =============================================================================
 
+data["hour"] = data["transaction_time"].apply(lambda x : x.hour)
 
+# see distribution
 
-
+sns.kdeplot(data["hour"])
+plt.show()
+plt.title("Transaction Over Hours")
 
 
 

@@ -8,13 +8,18 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 * Extract some information such as year , month and day
 * see number of transaction in each month
 * see number of transaction in each day of week
+* see number of transaction in each hour
 
 
 ## Visualizition Analysis
 
 
 ![Image 1](./plots/sales_over_months.png)
-*A bar plot focusing on the sales. Most sales within a six-month period*
+*A bar plot focusing on the Transactions over months.*
 
-![Image 1](./plots/Transaction_Over_Days_of_Week.png)
-*A bar plot focusing on the sales. Most sales within a six-month period*
+![Image 2](./plots/Transaction_Over_Days_of_Week.png)
+*A bar plot focusing on the Transactions over days of week.*
+
+![Image 3](./plots/Transaction_Over_Hours.png)
+*A bar plot focusing on the Transactions over hours.*
+
