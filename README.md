@@ -34,3 +34,5 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 
 ![Image 6](./plots/most_common_category.png)
 *A bar plot focusing on the most common products. Coffee stands as the best-selling product. Tea also exhibits a high sales rate.*
+
+![Image 6](./plots/Best_Categories_in_Each_Type.png)

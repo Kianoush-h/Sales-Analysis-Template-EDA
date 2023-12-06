@@ -207,10 +207,47 @@ plt.title("Most Common Category")
 
 
 
+# =============================================================================
+# PART 8: Discovering product_type column
+# =============================================================================
 
+# Assuming 'counts' is the DataFrame obtained from your groupby operation
+counts = data.groupby(["product_category", "product_type"]).size().reset_index(name = "count")
 
+# Get unique categories
+categories = counts['product_category'].unique()
 
+# Create subplots for each category in a 4x2 grid
+fig, axes = plt.subplots(5, 2, figsize = (15, 20))
 
+# Flatten the axes for easier iteration
+axes = axes.flatten()
+
+for i, category in enumerate(categories):
+    # Filter data for each category
+    subset = counts[counts['product_category'] == category]
+    
+    # Sort the data by 'count' column in descending order
+    subset = subset.sort_values('count', ascending = False)
+    
+    # Create a bar plot for each category with sorted order
+    sns.barplot(x = 'count', y = 'product_type', data = subset, ax = axes[i], order = subset['product_type'])
+    axes[i].set_title(f'Product Types in {category}')
+    axes[i].set_ylabel('')
+    axes[i].set_xlabel('')
+    axes[i].tick_params(axis = 'x', rotation = 45)
+    axes[i].grid(True)
+    
+    # Adding bar labels
+    for idx, bar in enumerate(axes[i].patches):
+        axes[i].text(bar.get_width(), bar.get_y() + bar.get_height() / 2, subset.iloc[idx]['count'], ha = 'left', va = 'center')
+
+# Hide extra subplots if there are fewer categories than subplots
+for j in range(len(categories), len(axes)):
+    axes[j].axis('off')
+
+plt.tight_layout()
+plt.show()
 
 
 
