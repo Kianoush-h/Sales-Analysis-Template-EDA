@@ -253,8 +253,30 @@ plt.show()
 
 
 
+# =============================================================================
+# Category VS Total revenue
+# =============================================================================
 
+data["Total revenue"] = data["transaction_qty"] * data["unit_price"]
+# grouped product_type' and 'Total revenue'
+category_revenue = data.groupby("product_type")["Total revenue"].sum().reset_index(name = "revenue")
 
+# sort category by revenue
+category_revenue = category_revenue.sort_values(by = 'revenue', ascending = False)
+
+# set figure size
+plt.figure(figsize = (15,6))
+
+# create bar plot
+sns.barplot(x = "product_type", y = "revenue", data = category_revenue, palette = "RdBu")
+
+# set x-axis rotation
+plt.xticks(rotation = 90)
+
+plt.tight_layout()
+plt.show()
+
+plt.title("Category VS Total Revenue")
 
 
 
