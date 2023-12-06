@@ -24,21 +24,31 @@ sns.set_style("darkgrid")
 sns.set_palette("RdBu")
 
 
+# =============================================================================
+# Gathering data from raw data
+# =============================================================================
+
+# read data set
+data = pd.read_excel("data/Coffee Shop Sales.xlsx")
+
+# see top 5 rows
+head = data.head()
 
 
+# see number of rows and columns
+print(f" shape is: {data.shape}")
+
+# check missing values
+data.isna().sum()
+
+# see quick info
+data.info()
+
+data.describe()
 
 
-
-
-
-
-
-
-
-
-
-
-
+# check duplicated rows
+data.duplicated().any()
 
 
 
