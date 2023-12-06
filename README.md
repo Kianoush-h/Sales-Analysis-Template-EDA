@@ -1,6 +1,8 @@
-# Coffee Shop Sales Analysis EDA
+# Sales Analysis Template-EDA
+Creating a template for Basic EDA on any datasets. Here we demonstrate a simple EDA on a coffee shop data.
 
-Putting the sensitive nature of the topic aside, analyzing mortality data is essential to understanding the complex circumstances of death across the country. The US Government uses this data to determine life expectancy and understand how death in the U.S. differs from the rest of the world. Whether you’re looking for macro trends or analyzing unique circumstances, we challenge you to use this dataset to find your own answers to one of life’s great mysteries.
+Analyze sales trends over time, discover peak days, and identify top-selling products driving business revenue. Perfect for EDA enthusiasts and coffee connoisseurs. ☕📈 
+#CoffeeSales #DataAnalysis #EDA
 
 
 ## Analysis & Visualizations
