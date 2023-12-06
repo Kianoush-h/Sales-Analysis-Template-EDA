@@ -137,16 +137,24 @@ data["day"] = data["transaction_date"].dt.day_name()
 
 
 # =============================================================================
-# PART 2: Sales 
+# PART 2: transactions over months 
 # =============================================================================
 
 # see number of transaction in each month
 count_plot(x_axis = "month")
+plt.title("Sales Over Months")
 
+# =============================================================================
+# PART 3: transactions over days of week
+# =============================================================================
 
+# see top 5 day of transaction
+# set figure size
+plt.figure(figsize = (10,6))
 
-
-
+# call function i create it in cell 12
+count_plot(x_axis = "day")
+plt.title("Transaction Over Days of Week")
 
 
 

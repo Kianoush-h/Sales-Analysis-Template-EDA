@@ -7,6 +7,7 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 * Discovering transaction_date column
 * Extract some information such as year , month and day
 * see number of transaction in each month
+* see number of transaction in each day of week
 
 
 ## Visualizition Analysis
@@ -15,4 +16,5 @@ Putting the sensitive nature of the topic aside, analyzing mortality data is ess
 ![Image 1](./plots/sales_over_months.png)
 *A bar plot focusing on the sales. Most sales within a six-month period*
 
-
+![Image 1](./plots/Transaction_Over_Days_of_Week.png)
+*A bar plot focusing on the sales. Most sales within a six-month period*
